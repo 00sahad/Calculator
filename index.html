@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,66 @@
     <title>Calculator</title>
     <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Calculator</h1>
+    <!-- Body -->
+    <header>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-center pt-5">
+                <div class="col-lg-4 col-12 d-flex justify-content-center align-center flex-column text-center" >
+                    <div class=" pt-0 py-3 px-lg-4 px-3" id="calculatorBody">
+                        <div class="row pt-0 " id="cbody">
+                            <div class="col-12 pt-5">
+                                <h5 class="text-uppercase">Calculator</h5>
+                            </div>
+                            <div class="col-12 py-3">
+                                <input type="text" class="px-4 py-3" id="display">
+                            </div>
+                            <div class="col-12">
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(0)">9</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(1)">8</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(2)">7</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressOprator('+')">+</button>
+                            </div>
+                            <div class="col-12">
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(4)">6</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(5)">5</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(6)">4</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressOprator('-')">-</button>
+                            </div>
+                            <div class="col-12">
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(8)">3</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(9)">2</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(10)">1</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressOprator('*')">*</button>
+                            </div>
+                            <div class="col-12">
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber()" disabled><span>(</span></button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber(13)">0</button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressNumber()" disabled><span>)</span></button>
+                                <button class="px-4 py-3 mr-1 button mb-2" onclick="pressOprator('/')">/</button>
+                            </div>
+                            <div class="col-12 pb-5">
+                                <button class="px-5 py-3 mr-1 button mb-2" onclick="clearDisplay()">C</button>
+                                <button class="px-5 py-3 mr-1 button mb-2 w-50" onclick="sumFinder()">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- Boot strap scriopts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
